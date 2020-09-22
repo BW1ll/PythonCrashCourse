@@ -86,7 +86,7 @@ class User:
         self.login_attempts += 1
 
     def rest_login_attempts(self):
-        '''restes the login_attempts varable to 0'''
+        '''resets the login_attempts varable to 0'''
         self.login_attempts = 0
 
 
