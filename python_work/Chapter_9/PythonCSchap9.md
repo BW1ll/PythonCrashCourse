@@ -7,9 +7,9 @@
 # 2) top 5 most import
 # 3) top 3 most import
 
-top_7 = ['Method', '__init__()','instances','attributes', 'child/parent class', 'doc string', 'importing PSL']
-top_5 = ['__init__()','instances','attributes', 'child/parent class', 'importing PSL']
-top_3 = ['__init__()', 'instances', 'importing PSL']
+top_7 = ['Method vs Function', '__init__()', 'special methods', 'styling Classes', 'inheritance', 'importing', 'Python Standard Library']
+top_5 = ['__init__()','special methods','styling Classes', 'inheritance', 'importing']
+top_3 = ['special methods', 'styling Classes', 'importing']
 ```
 
 ## Classes
@@ -21,21 +21,21 @@ top_3 = ['__init__()', 'instances', 'importing PSL']
 - instance: object created from a class
 - Attribute: Python variable that belongs to a class rather than a particular object.
 
-start by defining a class with the Python key-word "class"
+Start by defining a class with the Python key-word "class"
 
 ```Python
-class NameOfClass: # styling class name should be capitalized and CamelCase
+class NameOfClass: # styling class name should be Capitalized and CamelCase
     pass    # classes cannot be created without at least one line code in them
 ```
 
-write a doc sting that summarize what the class does
+Write a doc sting that summarize what the class does.
 
 ```Python
 '''This is an example of a doc string'''
 ```
 
-the __init__() method is a special method Python automatically runs when creating an instance of a class.  
-it is often call a constructor in other languages
+The __init__() method is a special method Python automatically runs when creating an instance of a class.  
+It is often called a constructor in other languages.
 
 ```Python
 def __init__(self, parameter1, parameter2):
@@ -48,11 +48,11 @@ self.parameter1 = parameter1
 self.parameter2 = parameter2
 ```
 
-self.parameter1 = parameter1 takes the value associated with the parameter parameter1 and assigns it to the variable parameter1.  
+"self.parameter1 = parameter1" takes the value associated with the parameter parameter1 and assigns it to the variable parameter1.  
 The variable parameter1 is then attached to the instance that is being created.  
 self is passed automatically  
   
-define any methods for the class
+Define any methods for the class
 
 ```Python3
 def method1(self):
@@ -62,14 +62,14 @@ def method2(self):
     pass
 ```
 
-create an instance/s of the class and pass required parameters
+Create an instance/s of the class and pass required parameters
 
 ```Python
 instance1 = NameOfClass(parameter1, parameter2)
 instance2 = NameOfClass(parameter1, parameter2)
 ```
 
-calling methods of an instance
+Calling methods of an instance
 
 ```Python
 instance1.method1()
@@ -91,11 +91,11 @@ class NameOfClass:
         self.parameter2 = parameter2
 
     def method1(self):
-        '''Document Method'''
+        '''Document Method here'''
         pass
 
     def method2(self):
-        '''Document Method'''
+        '''Document Method here'''
         pass
 ```
 
@@ -103,7 +103,7 @@ class Dog from PCC
 
 ```Python
 class Dog:
-    """A simple attempt to model a dog.""" 
+    """A simple attempt to model a dog."""
 
     def __init__(self, name, age):
         """Initialize name and age attributes."""
@@ -139,7 +139,7 @@ out put:
 - "Your dog is 3 years old."
 - "Lucy is now sitting."
 
-## Working with classes and instances
+### Working with classes and instances
 
 Setting a default value for an Attribute
 
@@ -162,8 +162,8 @@ class NameOfClass:
         pass
 ```
 
-modifying attribute Values  
-directly
+Modifying Attribute Values  
+Directly
 
 ```Python
 instance1 = NameOfClass(parameter1, parameter2)
@@ -180,12 +180,17 @@ Through a Method
 def update_parameter3(self, new_value):
     '''Example on how to create method to update attribute'''
     self.parameter3 = new_value
+    print(self.parameter3)
+# method output would print the updated value of self.parameter3
 ```
 
-incrementing Value through method
+Incrementing Value through a Method
 
 ```Python
 def update_parameter3(self, new_value):
     '''Example on how to create method to update attribute'''
     self.parameter3 += new_value
+# method output would print the updated value of self.parameter3
 ```
+
+## Inheritance
