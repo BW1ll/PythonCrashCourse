@@ -7,7 +7,8 @@
 # 2) top 5 most import
 # 3) top 3 most import
 
-top_7 = ['Method vs Function', '__init__()', 'special methods', 'styling Classes', 'inheritance', 'importing', 'Python Standard Library']
+top_7 = ['Method vs Function', '__init__()', 'special methods', 'styling Classes', 'inheritance',
+         'importing', 'Python Standard Library']
 top_5 = ['__init__()','special methods','styling Classes', 'inheritance', 'importing']
 top_3 = ['special methods', 'styling Classes', 'importing']
 ```
@@ -32,6 +33,7 @@ Write a doc sting that summarize what the class does.
 
 ```Python
 '''This is an example of a doc string'''
+"""This is also and example of a doc string"""
 ```
 
 The __init__() method is a special method Python automatically runs when creating an instance of a class.  
@@ -194,3 +196,40 @@ def update_parameter3(self, new_value):
 ```
 
 ## Inheritance
+
+You can create specialized subclass of a class.  Whe you create a subclass,  
+the subclass becomes the child class and the the one it inherits form becomes the parent.
+
+The __init__() Method for a child class
+
+```Python
+class Subclass(NameOfClass):
+    '''Document Subclass '''
+
+    def __init__(self, parameter1, parameter2):
+        '''Initialize the attributes of thee parent class'''
+        super().__init__(self, parameter1, parameter2)
+        # super() is a special function that allows you to call a method from the parent class
+```
+
+The super() method is wat allows the child class to inherit all of the attributes and methods  
+of the parent class  
+  
+Defining Attributes and Methods for the Child Class
+
+```Python
+class Subclass(NameOfClass):
+    '''Document Subclass '''
+
+    def __init__(self, parameter1, parameter2):
+        '''
+        Initialize the attributes of thee parent class
+        Then initialize attributes specific to the subclass
+        '''
+        super().__init__(self, parameter1, parameter2)
+        sell.parameter4 = parameter4
+
+    def subclass(self):
+        pass
+
+```
