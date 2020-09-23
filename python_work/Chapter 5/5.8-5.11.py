@@ -25,7 +25,7 @@ current_users = ['brian', 'sarah', 'erin', 'susan', 'noah']
 new_users = ['Brian', 'Sarah', 'Geoff', 'Nora', 'Miles']
 for new_user in new_users:
     if new_user.lower() in current_users:
-            print(f'The username {new_user} is not avalible.  Please try again.')
+            print(f'The username {new_user} is not available.  Please try again.')
     else:
         print(f'Welcome {new_user}.  Thanks for joining!')
         current_users.append(new_user.lower())
