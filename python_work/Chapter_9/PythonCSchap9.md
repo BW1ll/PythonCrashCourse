@@ -299,9 +299,35 @@ import car  # imports the entire module
 my_mustang = car.Car('ford', 'mustang', 2019)
 my_tesla = car.ElectricCar('tesla', 'model s', 2019)
 
-from car import *  # imports all classes form module, not recommended
-# being able to read the import statement to see what classes you are using
+from car import *  # imports all classes form module, not recommended.
+# Being able to read the import statement to see what classes you are using
 # is helpful, not knowing can lead to naming conflict within your program
-
-
+# or other unforeseen issues
 ```
+
+Importing Module into a Module
+
+```Python
+# module battery
+class Battery:
+    --snip--
+
+# Module car:
+from battery import Battery
+
+class Car:
+    --snip--
+
+class ElectricCar:
+    --snip--
+
+# Project module:
+from car import Car, ElectricCar
+
+my_mustang = car.Car('ford', 'mustang', 2019)
+my_tesla = car.ElectricCar('tesla', 'model s', 2019)
+my_tesla.battery.describe_battery()
+my_tesla.battery.get_range()
+```
+
+Using Aliases
