@@ -29,7 +29,7 @@ class NameOfClass: # styling class name should be Capitalized and CamelCase
     pass    # classes cannot be created without at least one line code in them
 ```
 
-### Write a doc sting that summarize what the class does.
+### Write a doc sting that summarize what the class does
 
 ```Python
 '''This is an example of a doc string'''
@@ -45,7 +45,7 @@ It is often called a constructor in other languages.
 def __init__(self, parameter1, parameter2):
 ```
 
-### Assign class variables.
+### Assign class variables
 
 Any variable that begins with self is available to every Method in the class
 
