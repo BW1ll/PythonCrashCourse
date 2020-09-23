@@ -22,19 +22,21 @@ top_3 = ['special methods', 'styling Classes', 'importing']
 - instance: object created from a class
 - Attribute: Python variable that belongs to a class rather than a particular object.
 
-#### Start by defining a class with the Python key-word "class"
+### Start by defining a class with the Python key-word "class"
 
 ```Python
 class NameOfClass: # styling class name should be Capitalized and CamelCase
     pass    # classes cannot be created without at least one line code in them
 ```
 
-Write a doc sting that summarize what the class does.
+### Write a doc sting that summarize what the class does.
 
 ```Python
 '''This is an example of a doc string'''
 """This is also and example of a doc string"""
 ```
+
+### Initialize Parameters
 
 The ``__init__``() method is a special method Python automatically runs when creating an instance of a class.  
 It is often called a constructor in other languages.
@@ -43,7 +45,9 @@ It is often called a constructor in other languages.
 def __init__(self, parameter1, parameter2):
 ```
 
-Assign any class variables.  Any variable that begins with self is available to every Method in the class
+### Assign class variables.
+
+Any variable that begins with self is available to every Method in the class
 
 ```Python
 self.parameter1 = parameter1
@@ -54,7 +58,7 @@ self.parameter2 = parameter2
 The variable parameter1 is then attached to the instance that is being created.  
 self is passed automatically  
   
-Define any methods for the class
+### Define any methods for the class
 
 ```Python3
 def method1(self):
@@ -64,6 +68,8 @@ def method2(self):
     pass
 ```
 
+### Create an instance
+
 Create an instance/s of the class and pass required parameters
 
 ```Python
@@ -71,7 +77,7 @@ instance1 = NameOfClass(parameter1, parameter2)
 instance2 = NameOfClass(parameter1, parameter2)
 ```
 
-Calling methods of an instance
+### Calling methods of an instance
 
 ```Python
 instance1.method1()
@@ -81,7 +87,7 @@ instance2.method1()
 instance2.method2()
 ```
 
-example class
+### example class
 
 ```Python
 class NameOfClass:
@@ -101,7 +107,7 @@ class NameOfClass:
         pass
 ```
 
-class Dog from PCC
+### class Dog from PCC
 
 ```Python
 class Dog:
@@ -143,7 +149,7 @@ out put:
 
 ### Working with classes and instances
 
-Setting a default value for an Attribute
+#### Setting a default value for an Attribute
 
 ```Python
 class NameOfClass:
@@ -164,8 +170,9 @@ class NameOfClass:
         pass
 ```
 
-Modifying Attribute Values  
-Directly
+#### Modifying Attribute Values  
+
+##### Directly
 
 ```Python
 instance1 = NameOfClass(parameter1, parameter2)
@@ -176,7 +183,7 @@ example_string = f'{instance1.parameter1} will print parameter1 in a string'
 instance1.parameter1 = 'changed value of parameter1'
 ```
 
-Through a Method
+##### Through a Method
 
 ```Python
 def update_parameter3(self, new_value):
@@ -186,7 +193,7 @@ def update_parameter3(self, new_value):
 # method output would print the updated value of self.parameter3
 ```
 
-Incrementing Value through a Method
+##### Incrementing Value through a Method
 
 ```Python
 def update_parameter3(self, new_value):
@@ -200,7 +207,7 @@ def update_parameter3(self, new_value):
 You can create specialized subclass of a class.  Whe you create a subclass,  
 the subclass becomes the child class and the one it inherits form becomes the parent.
 
-The ``__init__``() Method for a child class
+### The ``__init__``() Method for a child class
 
 ```Python
 class Subclass(NameOfClass):
@@ -215,7 +222,7 @@ class Subclass(NameOfClass):
 The super() method is wat allows the child class to inherit all of the attributes and methods  
 of the parent class  
   
-Defining Attributes and Methods for the Child Class
+### Defining Attributes and Methods for the Child Class
 
 ```Python
 class Subclass(NameOfClass):
@@ -234,7 +241,7 @@ class Subclass(NameOfClass):
 
 ```
 
-Instances as Attributes
+## Instances as Attributes
 
 ```Python
 class Car:
@@ -282,7 +289,9 @@ my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
 ```
 
-Importing Classes
+## Importing
+
+### Importing Classes
 
 ```Python
 # Using the Car, Battery, and ElectricCar classes above,
@@ -305,7 +314,7 @@ from car import *  # imports all classes form module, not recommended.
 # or other unforeseen issues
 ```
 
-Importing Module into a Module
+### Importing Module into a Module
 
 ```Python
 # module battery
@@ -330,7 +339,7 @@ my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
 ```
 
-Using Aliases
+### Using Aliases
 
 ```Python
 from car import Car as C
@@ -344,4 +353,4 @@ my_tesla = EC('tesla', 'model s', 2019)
 
 ***Python Standard Library*** = set of modules included with every Python installation
 
-https://docs.python.org/3/library/
+<https://docs.python.org/3/library/>
