@@ -30,7 +30,7 @@ class NameOfClass: # styling class name should be Capitalized and CamelCase
     pass    # classes cannot be created without at least one line code in them
 ```
 
-### Write a doc sting that summarize what the class does
+### Write a *docsting* that summarize what the class does
 
 ```Python
 '''This is an example of a doc string'''
@@ -375,12 +375,12 @@ my_tesla = EC('tesla', 'model s', 2019)
 
 Just a few notes on styling:
 
-1. Class names should be written in CamelCase
-2. Every class should have a docstring immediately following the class definition
+1. Class names should be written in *CamelCase*
+2. Every class should have a *docstring* immediately following the class definition
 3. Blank lines in code:
    1. Within a class, one blank lines between methods
    2. Within a module, two blank lines between classes
 4. Importing:
-   1. PSL should be imported first
+   1. Python Standard Library should be imported first
    2. add a blank line
    3. any modules that you wrote should be imported
