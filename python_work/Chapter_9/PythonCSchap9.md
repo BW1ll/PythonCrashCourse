@@ -153,7 +153,7 @@ class NameOfClass:
         '''initialize parameters'''
         self.parameter1 = parameter1
         self.parameter2 = parameter2
-        self.parameter3 = 0
+        self.parameter3 = 0 # setting default value
 
     def method1(self):
         '''Document Method'''
@@ -238,7 +238,7 @@ Instances as Attributes
 
 ```Python
 class Car:
-    --snip--
+    --snip--    #sniped for space
 
 class Battery:
     """A simple attempt to model a battery for an electric car."""
@@ -270,7 +270,7 @@ class ElectricCar(Car):
         Then initialize attributes specific to an electric car.
         """
         super().__init__(make, model, year)
-        self.battery = Battery()
+        self.battery = Battery()    # Making an instance and attribute
 
     def describe_battery(self):
         """Print a statement describing the battery size."""
@@ -284,3 +284,24 @@ my_tesla.battery.get_range()
 
 Importing Classes
 
+```Python
+# Using the Car, Battery, and ElectricCar classes above,
+# all saved in one file(also called a module) called car.py
+
+from car import Car # importing one class from module
+my_mustang = Car('ford', 'mustang', 2019)
+
+from car import Car, ElectricCar    # importing multiple classes from module
+my_mustang = Car('ford', 'mustang', 2019)
+my_tesla = ElectricCar('tesla', 'model s', 2019)
+
+import car  # imports the entire module
+my_mustang = car.Car('ford', 'mustang', 2019)
+my_tesla = car.ElectricCar('tesla', 'model s', 2019)
+
+from car import *  # imports all classes form module, not recommended
+# being able to read the import statement to see what classes you are using
+# is helpful, not knowing can lead to naming conflict within your program
+
+
+```
