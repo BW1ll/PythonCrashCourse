@@ -33,8 +33,8 @@ class NameOfClass: # styling class name should be Capitalized and CamelCase
 ### Write a *docsting* that summarize what the class does
 
 ```Python
-'''This is an example of a doc string'''
-"""This is also and example of a doc string"""
+    '''This is an example of a doc string'''
+    """This is also and example of a doc string"""
 ```
 
 ### Initialize Parameters
@@ -44,7 +44,7 @@ It is often called a constructor in other languages.
 In Python, methods that start and end with double underscores hold special meaning, and are often referred to as "Dunder Methods"
 
 ```Python
-def __init__(self, parameter1, parameter2):
+    def __init__(self, parameter1, parameter2):
 ```
 
 ### Assign class variables
@@ -52,8 +52,8 @@ def __init__(self, parameter1, parameter2):
 Any variable that begins with self is available to every Method in the class
 
 ```Python
-self.parameter1 = parameter1
-self.parameter2 = parameter2
+        self.parameter1 = parameter1
+        self.parameter2 = parameter2
 ```
 
 "self.parameter1 = parameter1" takes the value associated with the parameter ``parameter1`` and assigns it to the variable parameter1.  
@@ -63,11 +63,11 @@ The variable parameter1 is then attached to the instance that is being created.
 ### Define any methods for the class
 
 ```Python3
-def method1(self):
-    pass
+        def method1(self):
+            pass
 
-def method2(self):
-    pass
+        def method2(self):
+            pass
 ```
 
 ### Create an instance
