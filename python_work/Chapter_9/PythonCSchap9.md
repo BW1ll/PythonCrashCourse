@@ -7,20 +7,21 @@
 # 2) top 5 most import
 # 3) top 3 most import
 
-top_7 = ['Method vs Function', '__init__()', 'special methods', 'styling Classes', 'inheritance',
+top_7 = ['Method vs Function', '__init__()', 'special methods', 'styling classes', 'inheritance',
          'importing', 'Python Standard Library']
-top_5 = ['__init__()','special methods','styling Classes', 'inheritance', 'importing']
-top_3 = ['special methods', 'styling Classes', 'importing']
+top_5 = ['__init__()','special methods','styling classes', 'inheritance', 'importing']
+top_3 = ['inheritance', 'styling classes', 'importing']
 ```
 
 ## Classes
 
 ***Class*** = represent real world things, objects are created based on these things
 
-- Class: define the general behavior of the object and are created similarly to the "define functions" method (def)
+- Class: define the general behavior of the object that will be created and are created similarly to the "define functions" method (def)
 - Method: method is like a Python function, but it must be called on an object.
 - instance: object created from a class
 - Attribute: Python variable that belongs to a class rather than a particular object.
+- Module: generally, any file that ends with the .py extension
 
 ### Start by defining a class with the Python key-word "class"
 
@@ -55,9 +56,9 @@ self.parameter1 = parameter1
 self.parameter2 = parameter2
 ```
 
-"self.parameter1 = parameter1" takes the value associated with the parameter parameter1 and assigns it to the variable parameter1.  
+"self.parameter1 = parameter1" takes the value associated with the parameter ``parameter1`` and assigns it to the variable parameter1.  
 The variable parameter1 is then attached to the instance that is being created.  
-self is passed automatically  
+``self`` is passed automatically  
   
 ### Define any methods for the class
 
@@ -185,9 +186,18 @@ instance1 = NameOfClass(parameter1, parameter2)
 
 instance1.method1()
 
-example_string = f'{instance1.parameter1} will print parameter1 in a string'
+example_string = f'{instance1.parameter1} will print parameter1 in a string.'
 instance1.parameter1 = 'changed value of parameter1'
+example_string2 = f'{instance1.parameter1} will print the updated value of parameter1 in a string.'
+
+print(example_string)
+print(example_string2)
 ```
+
+output:
+>parameter1 will print parameter1 in a string.
+>
+>changed value of parameter1 will print the updated value of parameter1 in a string.
 
 ##### Through a Method
 
@@ -211,7 +221,7 @@ def update_parameter3(self, new_value):
 ## Inheritance
 
 You can create specialized subclass of a class.  Whe you create a subclass,  
-the subclass becomes the child class and the one it inherits form becomes the parent.
+the subclass becomes the child class and the one it inherits form becomes the parent class.
 
 ### The ``__init__``() Method for a child class
 
@@ -225,7 +235,7 @@ class Subclass(NameOfClass):
         # super() is a special function that allows you to call a method from the parent class
 ```
 
-The super() method is wat allows the child class to inherit all of the attributes and methods  
+The super() method is what allows the child class to inherit all of the attributes and methods  
 of the parent class  
   
 ### Defining Attributes and Methods for the Child Class
@@ -247,7 +257,7 @@ class Subclass(NameOfClass):
 
 ```
 
-## Instances as Attributes
+### Instances as Attributes
 
 ```Python
 class Car:
@@ -360,3 +370,17 @@ my_tesla = EC('tesla', 'model s', 2019)
 ***Python Standard Library*** = set of modules included with every Python installation
 
 <https://docs.python.org/3/library/>
+
+## Styling Classes
+
+Just a few notes on styling:
+
+1. Class names should be written in CamelCase
+2. Every class should have a docstring immediately following the class definition
+3. Blank lines in code:
+   1. Within a class, one blank lines between methods
+   2. Within a module, two blank lines between classes
+4. Importing:
+   1. PSL should be imported first
+   2. add a blank line
+   3. any modules that you wrote should be imported
