@@ -30,7 +30,7 @@ class NameOfClass: # styling class name should be Capitalized and CamelCase
     pass    # classes cannot be created without at least one line code in them
 ```
 
-### Write a *docsting* that summarize what the class does
+### Write a *docstring* that summarize what the class does
 
 ```Python
     '''This is an example of a doc string'''
@@ -231,7 +231,7 @@ class Subclass(NameOfClass):
 
     def __init__(self, parameter1, parameter2):
         '''Initialize the attributes of thee parent class'''
-        super().__init__(self, parameter1, parameter2)
+        super().__init__(parameter1, parameter2)
         # super() is a special function that allows you to call a method from the parent class
 ```
 
@@ -249,7 +249,7 @@ class Subclass(NameOfClass):
         Initialize the attributes of thee parent class
         Then initialize attributes specific to the subclass
         '''
-        super().__init__(self, parameter1, parameter2)
+        super().__init__(parameter1, parameter2)
         sell.parameter4 = parameter4
 
     def subclassMethod(self):
@@ -349,8 +349,8 @@ class ElectricCar(Car):
 # Project module:
 from car import Car, ElectricCar
 
-my_mustang = car.Car('ford', 'mustang', 2019)
-my_tesla = car.ElectricCar('tesla', 'model s', 2019)
+my_mustang = Car('ford', 'mustang', 2019)
+my_tesla = ElectricCar('tesla', 'model s', 2019)
 my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
 ```
