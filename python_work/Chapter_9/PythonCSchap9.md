@@ -39,7 +39,8 @@ class NameOfClass: # styling class name should be Capitalized and CamelCase
 ### Initialize Parameters
 
 The ``__init__``() method is a special method Python automatically runs when creating an instance of a class.  
-It is often called a constructor in other languages.
+It is often called a constructor in other languages.  
+In Python, methods that start and end with double underscores hold special meaning, and are often referred to as "Dunder Methods"
 
 ```Python
 def __init__(self, parameter1, parameter2):
