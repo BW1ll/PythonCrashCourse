@@ -142,10 +142,15 @@ your_dog.sit()
 out put:
 
 > My dog's name is Willie.
+>
 > My dog is 6 years old.
+>
 > Willie is now sitting.
+>
 > Your dog's name is Lucy.
+>
 > Your dog is 3 years old.
+>
 > Lucy is now sitting.
 
 ### Working with classes and instances
