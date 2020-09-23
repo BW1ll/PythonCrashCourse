@@ -22,7 +22,7 @@ top_3 = ['special methods', 'styling Classes', 'importing']
 - instance: object created from a class
 - Attribute: Python variable that belongs to a class rather than a particular object.
 
-Start by defining a class with the Python key-word "class"
+#### Start by defining a class with the Python key-word "class"
 
 ```Python
 class NameOfClass: # styling class name should be Capitalized and CamelCase
@@ -36,7 +36,7 @@ Write a doc sting that summarize what the class does.
 """This is also and example of a doc string"""
 ```
 
-The __init__() method is a special method Python automatically runs when creating an instance of a class.  
+The ``__init__``() method is a special method Python automatically runs when creating an instance of a class.  
 It is often called a constructor in other languages.
 
 ```Python
@@ -134,12 +134,12 @@ your_dog.sit()
 
 out put:
 
-- "My dog's name is Willie."
-- "My dog is 6 years old."
-- "Willie is now sitting."
-- "Your dog's name is Lucy."
-- "Your dog is 3 years old."
-- "Lucy is now sitting."
+> My dog's name is Willie.
+> My dog is 6 years old.
+> Willie is now sitting.
+> Your dog's name is Lucy.
+> Your dog is 3 years old.
+> Lucy is now sitting.
 
 ### Working with classes and instances
 
@@ -200,7 +200,7 @@ def update_parameter3(self, new_value):
 You can create specialized subclass of a class.  Whe you create a subclass,  
 the subclass becomes the child class and the one it inherits form becomes the parent.
 
-The __init__() Method for a child class
+The ``__init__``() Method for a child class
 
 ```Python
 class Subclass(NameOfClass):
@@ -318,7 +318,7 @@ from battery import Battery
 class Car:
     --snip--
 
-class ElectricCar:
+class ElectricCar(Car):
     --snip--
 
 # Project module:
@@ -331,3 +331,17 @@ my_tesla.battery.get_range()
 ```
 
 Using Aliases
+
+```Python
+from car import Car as C
+from car import ElectricCar as EC
+
+my_mustang = C('ford', 'mustang', 2019)
+my_tesla = EC('tesla', 'model s', 2019)
+```
+
+## The Python Standard Library
+
+***Python Standard Library*** = set of modules included with every Python installation
+
+https://docs.python.org/3/library/
