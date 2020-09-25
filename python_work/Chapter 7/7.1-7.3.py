@@ -19,7 +19,7 @@ def restuarant_seating():
     message = int(message)
 
     if message <= 8:
-        print('Your table is reay.')
+        print('Your table is ready.')
     else:
         print("I'm sorry, you will have to wait for a table.")
 
