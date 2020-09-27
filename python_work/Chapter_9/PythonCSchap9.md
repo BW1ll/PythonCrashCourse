@@ -23,12 +23,11 @@ top_3 = ['inheritance', 'styling classes', 'importing']
 - Attribute: Python variable that belongs to a class rather than a particular object.
 - Module: generally, any file that ends with the .py extension
 - Benefits to using Python Classes
-
-1. Classes provide an easy way of keeping the data members and methods together in one place which helps in keeping the program more organized.
-2. Using classes also provides another functionality of this object-oriented programming paradigm, that is, inheritance.
-3. Classes also help in overriding any standard operator.
-4. Using classes provides the ability to reuse the code which makes the program more efficient.
-5. Grouping related functions and keeping them in one place (inside a class) provides a clean structure to the code which increases the readability of the program.
+  1. Classes provide an easy way of keeping the data members and methods together in one place which helps in keeping the program more organized.
+  2. Using classes also provides another functionality of this object-oriented programming paradigm, that is, inheritance.
+  3. Classes also help in overriding any standard operator.
+  4. Using classes provides the ability to reuse the code which makes the program more efficient.
+  5. Grouping related functions and keeping them in one place (inside a class) provides a clean structure to the code which increases the readability of the program.
 
 ### Start by defining a class with the Python key-word "class"
 
