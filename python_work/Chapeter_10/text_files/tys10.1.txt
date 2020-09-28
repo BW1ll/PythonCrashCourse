@@ -1,0 +1,7 @@
+In Python you can read and modify files.
+In Python you can uses classes to create objects.
+In Python you can create scripts to interact with operating systems.
+In Python you can write programs to interact wit users.
+In Python you can create web apps (django, flask).
+In Python you can you can create games.
+In Python you can do much more.
